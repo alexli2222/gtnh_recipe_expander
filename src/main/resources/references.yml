@@ -1,0 +1,181 @@
+# All items in the game, with their recipes if they have them
+items:
+  # Base materials (no recipe)
+  iron:
+    type: base_material
+  copper:
+    type: base_material
+  tin:
+    type: base_material
+  gold:
+    type: base_material
+  silver:
+    type: base_material
+  nickel:
+    type: base_material
+  steel:
+    type: base_material
+  aluminum:
+    type: base_material
+  stainless_steel:
+    type: base_material
+  polyethylene:
+    type: base_material
+  rubber:
+    type: base_material
+
+  # Alloys
+  cupronickel:
+    type: alloy
+    recipe:
+      copper: 0.5
+      nickel: 0.5
+  electrum:
+    type: alloy
+    recipe:
+      gold: 0.5
+      silver: 0.5
+
+  # Processed materials
+  copper_wire:
+    type: wire
+    recipe:
+      copper: 0.5
+  tin_wire:
+    type: wire
+    recipe:
+      tin: 0.5
+  gold_wire:
+    type: wire
+    recipe:
+      gold: 0.5
+  2x_cupronickel_wire:
+    type: wire
+    recipe:
+      cupronickel: 1
+  2x_silver_wire:
+    type: wire
+    recipe:
+      silver: 1
+  4x_electrum_wire:
+    type: wire
+    recipe:
+      electrum: 2
+
+  iron_rod:
+    type: rod
+    recipe:
+      iron: 0.5
+  steel_rod:
+    type: rod
+    recipe:
+      steel: 0.5
+  aluminum_rod:
+    type: rod
+    recipe:
+      aluminum: 0.5
+  stainless_steel_rod:
+    type: rod
+    recipe:
+      stainless_steel: 0.5
+
+  steel_plate:
+    type: plate
+    recipe:
+      steel: 1
+  aluminum_plate:
+    type: plate
+    recipe:
+      aluminum: 1
+  stainless_steel_plate:
+    type: plate
+    recipe:
+      stainless_steel: 1
+
+  magnetic_iron_rod:
+    type: magnetic_rod
+    recipe:
+      iron_rod: 1
+  magnetic_steel_rod:
+    type: magnetic_rod
+    recipe:
+      steel_rod: 1
+
+  # Components
+  tin_cable:
+    type: cable
+    recipe:
+      tin_wire: 1
+      rubber: 1
+  copper_cable:
+    type: cable
+    recipe:
+      copper_wire: 1
+      rubber: 1
+  gold_cable:
+    type: cable
+    recipe:
+      gold_wire: 1
+      rubber: 1
+  2x_silver_cable:
+    type: cable
+    recipe:
+      2x_silver_wire: 1
+      rubber: 1
+
+  lv_casing:
+    type: casing
+    recipe:
+      steel_plate: 8
+  mv_casing:
+    type: casing
+    recipe:
+      aluminum_plate: 8
+  hv_casing:
+    type: casing
+    recipe:
+      stainless_steel_plate: 8
+
+  lv_hull:
+    type: hull
+    recipe:
+      lv_casing: 1
+      polyethylene: 2
+      tin_cable: 2
+  mv_hull:
+    type: hull
+    recipe:
+      mv_casing: 1
+      polyethylene: 2
+      copper_cable: 2
+  hv_hull:
+    type: hull
+    recipe:
+      hv_casing: 1
+      polyethylene: 2
+      gold_cable: 2
+
+  lv_motor:
+    type: motor
+    recipe:
+      copper_wire: 4
+      tin_cable: 2
+      magnetic_iron_rod: 1
+      iron_rod: 2
+  mv_motor:
+    type: motor
+    recipe:
+      2x_cupronickel_wire: 4
+      copper_cable: 2
+      magnetic_steel_rod: 1
+      aluminum_rod: 2
+  hv_motor:
+    type: motor
+    recipe:
+      4x_electrum_wire: 4
+      2x_silver_cable: 2
+      magnetic_steel_rod: 1
+      stainless_steel_rod: 2
+
+# Final products/machines
+products:

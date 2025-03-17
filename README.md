@@ -1,6 +1,9 @@
 # GTNH Recipe Expander
+### By al232
 
 A very basic java executable that expands complex GTNH recipes into base materials.
+
+### REQUIRES JAVA 17+
 
 ## Current Functions:
 

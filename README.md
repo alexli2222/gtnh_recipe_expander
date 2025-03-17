@@ -1,36 +1,14 @@
-# Java Project
+# GTNH Recipe Expander
 
-This is a basic Java project using Maven for build management and JUnit 5 for testing.
+A very basic java executable that expands complex GTNH recipes into base materials.
 
-## Prerequisites
+##Current Functions:
 
-- Java 17 or higher
-- Maven
+ - Base Material Calculation
+ - Ability to Backtrack to Intermediate Steps
+ - Ability to Control Amount of Products in Calculation
 
-## Project Structure
-
-```
-src/
-├── main/java/        # Application source code
-└── test/java/        # Test source code
-```
-
-## Building the Project
-
-To build the project, run:
-
-```bash
-mvn clean install
-```
-
-## Running Tests
-
-To run the tests, execute:
-
-```bash
-mvn test
-```
-
-## Development
-
-The project includes a simple `Calculator` class with basic arithmetic operations as an example. You can add more classes and tests following the same structure. 
+##Current Registered Items:
+ 
+ - Motors
+ - Machine Hulls LV-HV

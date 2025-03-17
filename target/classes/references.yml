@@ -1,6 +1,6 @@
 # All items in the game, with their recipes if they have them
 items:
-  # Base materials (no recipe)
+  # Base Material
   iron:
     type: base_material
   copper:
@@ -36,7 +36,7 @@ items:
       gold: 0.5
       silver: 0.5
 
-  # Processed materials
+  # Wire
   copper_wire:
     type: wire
     recipe:
@@ -62,6 +62,7 @@ items:
     recipe:
       electrum: 2
 
+  # Rod
   iron_rod:
     type: rod
     recipe:
@@ -79,6 +80,7 @@ items:
     recipe:
       stainless_steel: 0.5
 
+  # Plate
   steel_plate:
     type: plate
     recipe:
@@ -91,7 +93,12 @@ items:
     type: plate
     recipe:
       stainless_steel: 1
+  rubber_sheet:
+    type: plate
+    recipe:
+      rubber: 1
 
+  # Magnetic Rod
   magnetic_iron_rod:
     type: magnetic_rod
     recipe:
@@ -101,7 +108,7 @@ items:
     recipe:
       steel_rod: 1
 
-  # Components
+  # Cable
   tin_cable:
     type: cable
     recipe:
@@ -123,6 +130,7 @@ items:
       2x_silver_wire: 1
       rubber: 1
 
+  # Casing
   lv_casing:
     type: casing
     recipe:
@@ -136,6 +144,7 @@ items:
     recipe:
       stainless_steel_plate: 8
 
+  # Hull
   lv_hull:
     type: hull
     recipe:
@@ -155,6 +164,7 @@ items:
       polyethylene: 2
       gold_cable: 2
 
+  # Motor
   lv_motor:
     type: motor
     recipe:
@@ -176,6 +186,100 @@ items:
       2x_silver_cable: 2
       magnetic_steel_rod: 1
       stainless_steel_rod: 2
+
+  # Small Gear
+  small_steel_gear:
+    type: small_gear
+    recipe:
+      steel: 1
+  small_aluminum_gear:
+    type: small_gear
+    recipe:
+      aluminum: 1
+  small_stainless_steel_gear:
+    type: small_gear
+    recipe:
+      stainless_steel: 1
+
+  # Piston
+  lv_piston:
+    type: piston
+    recipe:
+      steel_plate: 3
+      steel_rod: 2
+      small_steel_gear: 1
+      tin_cable: 2
+      lv_motor: 1
+  mv_piston:
+    type: piston
+    recipe:
+      aluminum_plate: 3
+      aluminum_rod: 2
+      small_aluminum_gear: 1
+      copper_cable: 2
+      mv_motor: 1
+  hv_piston:
+    type: piston
+    recipe:
+      stainless_steel_plate: 3
+      stainless_steel_rod: 2
+      small_stainless_steel_gear: 1
+      gold_cable: 2
+      hv_motor: 1
+
+  # Reference Circuit
+  lv_circuit:
+    type: base_material
+  mv_circuit:
+    type: base_material
+  hv_circuit:
+    type: base_material
+
+  # Conveyor Module
+  lv_conveyor_module:
+    type: conveyor_module
+    recipe:
+      rubber_sheet: 6
+      lv_motor: 2
+      tin_cable: 1
+  mv_conveyor_module:
+    type: conveyor_module
+    recipe:
+      rubber_sheet: 6
+      mv_motor: 2
+      copper_cable: 1
+  hv_conveyor_module:
+    type: conveyor_module
+    recipe:
+      rubber_sheet: 6
+      hv_motor: 2
+      gold_cable: 1
+
+  # Robot Arm
+  lv_robot_arm:
+    type: robot_arm
+    recipe:
+      steel_rod: 2
+      lv_motor: 2
+      lv_piston: 1
+      tin_cable: 3
+      lv_circuit: 1
+  mv_robot_arm:
+    type: robot_arm
+    recipe:
+      aluminum_rod: 2
+      mv_motor: 2
+      mv_piston: 1
+      copper_cable: 3
+      mv_circuit: 1
+  hv_robot_arm:
+    type: robot_arm
+    recipe:
+      stainless_steel_rod: 2
+      hv_motor: 2
+      hv_piston: 1
+      gold_cable: 3
+      hv_circuit: 1
 
 # Final products/machines
 products:
